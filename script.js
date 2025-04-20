@@ -30,4 +30,10 @@ const form = document.getElementById('registrationForm');
         console.error('Error:', error);
         alert('Failed to submit form');
       });
+      document.getElementById("registrationForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // prevent the default form submission
+        // Optional: You can add form validation here
+        window.location.href = "success.html"; // redirect to success page
+      });
+      
     });
