@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Workshop Registration</title>
+  <link rel="stylesheet"href="style.css">
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <header class="hero-section">
+    <h1>ROBOTICS CLUB MANIT</h1>
+    <p class="subtitle">Master ROBOTICS in 2 intensive days</p>
+    <button class="cta-button" onclick="document.getElementById('registration').scrollIntoView({ behavior: 'smooth' })">
+      Register Now
+    </button>
+  </header>
+
+  <!-- Workshop Details Section -->
+  <section class="details-section">
+    <h2>Workshop Details</h2>
+    <div class="details-grid">
+      <div class="detail-item">
+        <h3>Date & Time</h3>
+        <p>April 19-20, 2025</p>
+        <p>9:00 AM - 5:00 PM</p>
+      </div>
+      <div class="detail-item">
+        <h3>Location</h3>
+        <p>LRC Building</p>
+        <p>MANIT Bhopal</p>
+      </div>
+      <div class="detail-item">
+        <h3>Benefits</h3>
+        <ul>
+          <li>Provide the Participants hands-on experience on microcontrollers like Aurdino ,hardware interfacing,sensors,Computer aided Design(CAD),and more.</li>
+          <li>Learn to work with team (build leadership qualities)</li>
+          <li>Real-time projects.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Registration Form Section -->
+  <section id="registration" class="registration-section">
+    <h2>Register Now</h2>
+    <form id="registrationForm" class="registration-form">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required />
+      </div>
+      <div class="form-group">
+        <label for="experience">Experience Level</label>
+        <select id="experience" name="experience">
+          <option value="beginner">Beginner</option>
+          <option value="intermediate">Intermediate</option>
+          <option value="advanced">Advanced</option>
+        </select>
+      </div>
+      <button type="submit" class="submit-button">Submit Registration</button>
+    </form>
+  </section>
+  <script src="script.js"> </script>
+
+</body>
+</html>
